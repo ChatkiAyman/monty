@@ -82,9 +82,9 @@ void _rotr(stack_t **top, unsigned int line_number);
 void _mode(stack_t **top, unsigned int line_number);
 
 /*helpers.c*/
-FILE *file_open(char *filename);
-size_t number_lenght(int num);
-void number_verify(char *token);
+FILE *openfile(char *filename);
+size_t num_len(int num);
+void verify_number(char *token);
 void free_stack(stack_t *top);
 
 #endif

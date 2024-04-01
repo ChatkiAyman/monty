@@ -90,9 +90,9 @@ int main(int argc, char **argv)
 		token = strtok(line, " \n");
 		for (i = 0; token != NULL && i < 2; i++)
 		{
-			if (i == 0)
+			if (i == 0) /*first part command first loop*/
 				datax.opcode = token;
-			if (strcmp(datax.opcode, "push") != 0)
+			if (strcmp(datax.opcode, "push") != 0) /*if opcode is not push break*/
 				break;
 			if (i == 1)
 				verify_number(token);
